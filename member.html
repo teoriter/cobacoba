@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Teoriter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Nih cuy-->
+    <div class="top-head">
+        <div class="header">
+            <div class="greeting">Hello, <strong>TEORITER</strong> </div>
+            <div class="profile"></div>
+        </div>
+
+        <!-- Search Bar Nih cuy -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="silahkan cari" oninput="performSearch()">
+            <button onclick="performSearch()">
+                <img src="../assets/icons/search-alt-2-svgrepo-com.svg" alt="Search Icon" width="30" height="30">
+            </button>
+        </div>
+
+
+        <!-- home ni cuy -->
+        <div id="home" class="courses section active">
+
+
+
+            <!-- icon grid nih cuy -->
+            <div class="course-card" data-name="categories">
+                <div class="container mt-4">
+                    <div class="header-2">
+                        <h2>donasi dong mas beroh</h2>
+                        <button class="button-2"><a href="https://saweria.co/teoriter"
+                                style="text-decoration:none;color:darkslategrey;">tombol donasi</a></button>
+                    </div>
+                    <div class="icon-grid">
+                        <a onclick="navigateTo('prestasi')"
+                            style="text-decoration: none;color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
+                            class="icon-card">
+                            <img src="../assets/icons/trophy.svg" alt="Prestasi">
+                            <p>Prestasi</p>
+                        </a>
+                        <a onclick="navigateTo('event')"
+                            style="text-decoration: none;color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
+                            class="icon-card">
+                            <img src="../assets/icons/calendar-day.svg" alt="Event">
+                            <p>Event</p>
+                        </a>
+                        <a onclick="navigateTo('messages')"
+                            style="text-decoration: none;color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
+                            class="icon-card">
+                            <img src="../assets/icons/people-group.svg" alt="Anggota">
+                            <p>Anggota</p>
+                        </a>
+                        <a onclick="navigateTo('albums')"
+                            style="text-decoration: none;color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
+                            class="icon-card">
+                            <img src="../assets/icons/gallery.svg" alt="Album">
+                            <p>Album</p>
+                        </a>
+                        <a onclick="navigateTo('peraturan')"
+                            style="text-decoration: none;color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
+                            class="icon-card">
+                            <img src="../assets/icons/rules.svg" alt="Peraturan">
+                            <p>Peraturan</p>
+                        </a>
+                        <a href="#cabang"
+                            style="text-decoration: none;color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
+                            class="icon-card">
+                            <img src="../assets/icons/branching.svg" alt="Cabang">
+                            <p>Cabang</p>
+                        </a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+
+            <!-- Carousel Nih cuy -->
+            <div class="course-card" data-name="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/icons/20250201_015137.jpg" class="d-block w-100" alt="Slide 1">
+                            <div class="carousel-caption">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-item">
+                <img src="../assets/icons/20250201_014800.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div> -->
+                        <div class="carousel-item">
+                            <img src="../assets/icons/20250201_015437.jpg" class="d-block w-100" alt="Slide 3">
+                            <div class="carousel-caption">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Navigasi -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+
+
+            <!-- Filter Buttons Nih cuy-->
+            <div class="filter-buttons">
+                <button class="active" onclick="filterCourses('all')">semua</button>
+                <button onclick="filterCourses('popular')">Populer</button>
+                <button onclick="filterCourses('newest')">baru</button>
+                <!-- <button onclick="filterCourses('advance')"></button> -->
+            </div>
+
+            <!-- about nih cuy -->
+            <section id="about-us" data-name="about-us" class="course-card" data-category="all popular">
+                <h1 align="center"><B>TENTANG KAMI</B></h1>
+                <p>Dalam dinamika grup ini, terdapat
+                    menarik antara kebebasan berpendapat
+                    dan sistem otoriter.
+                    Meskipun setiap anggota memiliki kebebasan untuk menyuarakan pendapatnya, grup ini diatur secara
+                    otoriter oleh admin yang berperan sebagai pemimpin tertinggi. Keputusan dan arahan dari admin
+                    dianggap
+                    sebagai pedoman utama bagi seluruh anggota. Namun, hal yang menarik adalah bahwa sistem otoriter
+                    ini
+                    tidak membatasi kreativitas atau kontribusi anggota. Sebaliknya, memberikan batasan struktural
+                    ini
+                    justru menjadi katalisator bagi munculnya ide-ide yang lebih terorganisir dan berfokus. Para
+                    anggota
+                    cenderung membawa kepekaan analitis mereka ke dalam diskusi, menghasilkan pertukaran gagasan
+                    yang
+                    mendalam dan merangsang pemikiran kritis. Grup ini menjadi wadah bagi teori-teori inovatif,
+                    curhatan
+                    pribadi, dan berbagai topik yang mungkin sulit ditemukan di tempat lain. Meskipun admin memegang
+                    peranan
+                    sentral, atmosfer yang tercipta di dalam grup adalah kolaboratif dan terbuka, di mana setiap
+                    individu
+                    dihargai dan diakui. Keunikan kombinasi antara kebebasan berpendapat dan struktur otoriter
+                    menciptakan
+                    lingkungan yang dinamis dan menginspirasi di mana keberagaman pikiran diterima dan dihormati.
+                </p>
+            </section>
+
+            <br>
+
+            <!-- album nih cuy -->
+            <div class="course-card" data-category="all popular" data-name="album">
+                <div class="album">
+                    <p><b>ALBUM</b></p>
+                    <h2><b>WAJAH KAMI</b></h2>
+                </div>
+                <div class="gallery">
+                    <img src="../assets/images/bersama/IMG-20231006-WA0037.jpg" alt="Project 1"
+                        onclick="openLightbox(this.src)">
+                    <img src="../assets/images/bersama/IMG-20231006-WA0039.jpg" alt="Project 2"
+                        onclick="openLightbox(this.src)">
+                    <img src="../assets/images/bersama/IMG-20231006-WA0040.jpg" alt="Project 3"
+                        onclick="openLightbox(this.src)">
+                    <img src="../assets/images/bersama/IMG-20231006-WA0043.jpg" alt="Project 4"
+                        onclick="openLightbox(this.src)">
+                    <img src="../assets/images/bersama/smartpp.jfif" alt="Project 5" onclick="openLightbox(this.src)">
+                    <img src="../assets/images/bersama/IMG-20230706-WA0005.jpg" style="height: 83%;" alt="Project 6"
+                        onclick="openLightbox(this.src)">
+                </div>
+                <div class="footer-album" align="center">
+                    <button class="active" id="album" onclick="navigateTo('albums')">
+                        <span>LIHAT SEMUA</span>
+                    </button>
+                </div>
+                <br>
+            </div>
+
+            <!-- Lightbox Container -->
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Expanded Image">
+            </div>
+
+            <!-- daftar team nih cuy -->
+            <!-- Section Header -->
+            <!-- <div class="course-card" data-name="team">
+                <div class="modal-overlay" id="modal-overlay"></div>
+                <div class="section-header">
+                    <h2>Legenda Para <br>Member</h2>
+                    <span class="see-all" onclick="toggleDrawer()">See All</span>
+                </div> -->
+
+            <!-- Scrollable Cards -->
+            <!-- <div class="scroll-container"></div> -->
+
+            <!-- Drawer -->
+            <!-- <div class="drawer" id="drawer">
+                    <div class="drawer-header">
+                        <h3>Semua Member</h3>
+                        <button class="close-button" onclick="toggleDrawer()">✖</button>
+                    </div>
+                    <div class="drawer-content"></div>
+                </div> -->
+
+            <!-- Modal -->
+            <!-- <div class="modal-overlay" id="modal-overlay" onclick="closeModal()"></div>
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <h3 id="modal-title"></h3>
+                        <button class="close-button" onclick="closeModal()">✖</button>
+                    </div>
+                    <div class="modal-content">
+                        <img id="modal-img" src="" alt="Member">
+                        <p id="modal-story"></p>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- project nih cuy -->
+            <div class="course-card" data-name="project">
+                <div class="container-project">
+                    <div class="header-project">
+                        <img src="../assets/icons/Screenshot_2025-02-01-01-24-49-68_6012fa4d4ddec268fc5c7112cbb265e7.jpg"
+                            style="width: 100%;height: 35vh;border-radius: 20px;" alt="">
+                        <h2>Project Teoriter</h2>
+                        <p>TBC - Teoriter</p>
+                        <div class="buttons-project">
+                            <button class="active" id="project" onclick="navigateTo('projects')">
+                                <span>LIHAT SEMUA</span>
+                            </button>
+                            <button class="btn transfer"><a href="https://saweria.co/teoriter"
+                                    style="text-decoration: none;color: rgb(255, 255, 255);">donasi mang</a></button>
+                        </div>
+                    </div>
+                    <div class="overview">
+                        <h3>Perkembangan</h3>
+                        <p>Lama Berdiri: 2021 - 2025 <br> 2021 anggota = 6 orang <br>2022 = 7 orang <br> 2023 = 9 orang
+                            <br> 2024 = 18 orang <br>2025 = 18 orang </p>
+                        <!-- <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div> -->
+                    </div>
+                    <div class="overview" id="cabang">
+                        <h3>Cabang</h3>
+                        <div class="icons">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook-messenger"></i>
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> <br> <br>
+        <!-- card -->
+        <!-- <div class="course-card" data-category="all popular" data-name="Digital Design Thinking">
+                <div class="icon">
+                    <img src="https://via.placeholder.com/40" alt="Digital Design Thinking">
+                </div>
+                <div class="course-details">
+                    <h4>Digital Design Thinking</h4>
+                    <p>17 Files • 40 min</p>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="all advance" data-name="Web Development">
+                <div class="icon">
+                    <img src="https://via.placeholder.com/40" alt="Web Development">
+                </div>
+                <div class="course-details">
+                    <h4>Web Development</h4>
+                    <p>20 Files • 50 min</p>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="all newest" data-name="anjing Development">
+                <div class="icon">
+                    <img src="https://via.placeholder.com/40" alt="Web Development">
+                </div>
+                <div class="course-details">
+                    <h4>anjing Development</h4>
+                    <p>20 Files • 50 min</p>
+                </div>
+            </div> -->
+    </div>
+
+    <!-- isi album nih cuy -->
+    <div class="section" id="albums">
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h1>Gallery Teoriter</h1>
+                <button
+                    style="color: black;background-color: darkgreen;border-radius: 10px; width: 100px;height: 50px;"><a
+                        href="../assets/images/album/member.html"
+                        style="text-decoration: none;color: rgb(255, 255, 255);">galeri lama</a></button>
+            </div>
+
+            <div class="album-list">
+                <div class="album-item" onclick="showAlbum('mark-twain-gallery')">
+                    <img src="../assets/images/roni/IMG-20231116-WA0007.jpg" alt="Mark Twain">
+                    <div class="album-details">
+                        <h3>Admin 1</h3>
+                        <p>5 Photos</p>
+                    </div>
+                </div>
+                <div class="album-item" onclick="showAlbum('damon-twain-gallery')">
+                    <img src="../assets/images/fadhil/IMG_20231201_210433.jpg" alt="Damon Twain">
+                    <div class="album-details">
+                        <h3>Admin 2</h3>
+                        <p>15 Photos</p>
+                    </div>
+                </div>
+                <div class="album-item" onclick="showAlbum('shakira-lee-twain-gallery')">
+                    <img src="../assets/images/alen/alen1.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>Admin 3</h3>
+                        <p>24 Photos</p>
+                    </div>
+                </div>
+                <div class="album-item" onclick="showAlbum('putro')">
+                    <img src="../assets/images/putra/putro11.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>putro</h3>
+                        <p>13 Photos</p>
+                    </div>
+                </div>
+                <div class="album-item" onclick="showAlbum('bantip')">
+                    <img src="../assets/images/bandix/bantip5.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>bantip</h3>
+                        <p>7 Photos</p>
+                    </div>
+                </div>
+                <div class="album-item" onclick="showAlbum('ikyyy')">
+                    <img src="../assets/images/zikry/ikyyy10.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>ikyyy</h3>
+                        <p>11 Photos</p>
+                    </div>
+                </div>
+                <div class="album-item" onclick="showAlbum('elhis')">
+                    <img src="../assets/images/elis/elis5.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>elhis</h3>
+                        <p>9 Photos</p>
+                    </div>
+                </div>
+                <div class="album-item" onclick="showAlbum('oland')">
+                    <img src="../assets/images/oland/oland3.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>oland</h3>
+                        <p>3 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-item" onclick="showAlbum('aputh')">
+                    <img src="../assets/images/aputh/aputh3.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>aputh</h3>
+                        <p>5 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-item" onclick="showAlbum('aghil')">
+                    <img src="../assets/images/aghil/aghil2.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>aghil</h3>
+                        <p>2 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-item" onclick="showAlbum('irene')">
+                    <img src="../assets/images/irene/irene1.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>irene</h3>
+                        <p>3 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-item" onclick="showAlbum('rey')">
+                    <img src="../assets/images/rey/rey4.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>reyyy</h3>
+                        <p>8 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-item" onclick="showAlbum('rizik')">
+                    <img src="../assets/images/rizik/rizik2.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>Rizik</h3>
+                        <p>4 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-item" onclick="showAlbum('awah')">
+                    <img src="../assets/images/awah/awah1.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>Awah</h3>
+                        <p>2 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-item" onclick="showAlbum('patur')">
+                    <img src="../assets/images/patur/patur1.jpg" alt="Shakira Lee Twain">
+                    <div class="album-details">
+                        <h3>patur</h3>
+                        <p>3 Photos</p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="back-button" class="hidden" onclick="goBack()">Back to Albums</button>
+
+            <!-- Photo Galleries -->
+            <div id="patur" class="photo-gallery hidden">
+                <h2>Patur 3 Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/patur/patur1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/patur/patur1.jpg')">
+                    <img src="../assets/images/patur/patur2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/patur/patur2.jpg')">
+                    <img src="../assets/images/patur/patur3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/patur/patur3.jpg')">
+                </div>
+            </div>
+
+
+            <div id="awah" class="photo-gallery hidden">
+                <h2>Awah Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/awah/awah1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/awah/awah1.jpg')">
+                    <img src="../assets/images/awah/awah2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/awah/awah2.jpg')">
+                </div>
+            </div>
+
+
+            <div id="rizik" class="photo-gallery hidden">
+                <h2>Rizik Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/rizik/rizik1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/rizik/rizik1.jpg')">
+                    <img src="../assets/images/rizik/rizik2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/rizik/rizik2.jpg')">
+                    <img src="../assets/images/rizik/rizik3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/rizik/rizik3.jpg')">
+                    <img src="../assets/images/rizik/rizik4.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/rizik/rizik4.jpg')">
+                </div>
+            </div>
+
+
+            <div id="rey" class="photo-gallery hidden">
+                <h2>Reyyy Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/rey/rey1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/rey/rey1.jpg')">
+                    <img src="../assets/images/rey/rey2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/rey/rey2.jpg')">
+                    <img src="../assets/images/rey/rey3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/rey/rey3.jpg')">
+                    <img src="../assets/images/rey/rey4.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/rey/rey4.jpg')">
+                    <img src="../assets/images/rey/rey5.jpg" alt="Photo 5"
+                        onclick="openModal('../assets/images/rey/rey5.jpg')">
+                    <img src="../assets/images/rey/rey6.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/rey/rey6.jpg')">
+                    <img src="../assets/images/rey/rey7.jpg" alt="Photo 7"
+                        onclick="openModal('../assets/images/rey/rey7.jpg')">
+                    <img src="../assets/images/rey/rey8.jpg" alt="Photo 8"
+                        onclick="openModal('../assets/images/rey/rey8.jpg')">
+                </div>
+            </div>
+
+
+            <div id="irene" class="photo-gallery hidden">
+                <h2>Irene Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/irene/irene1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/irene/irene1.jpg')">
+                    <img src="../assets/images/irene/irene2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/irene/irene2.jpg')">
+                    <img src="../assets/images/irene/irene3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/irene/irene3.jpg')">
+                </div>
+            </div>
+
+
+            <div id="mark-twain-gallery" class="photo-gallery hidden">
+                <h2>Admin 1 Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/roni/1c7d4bb8-3971-48b8-ba7a-0cbcf50f5dd9.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/roni/1c7d4bb8-3971-48b8-ba7a-0cbcf50f5dd9.jpg')">
+                    <img src="../assets/images/roni/IMG-20230622-WA0006.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/roni/IMG-20230622-WA0006.jpg')">
+                    <img src="../assets/images/roni/IMG-20230704-WA0054.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/roni/IMG-20230704-WA0054.jpg')">
+                    <img src="../assets/images/roni/IMG-20231116-WA0007.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/roni/IMG-20231116-WA0007.jpg')">
+                    <img src="../assets/images/roni/Picsart_23-11-16_21-13-28-024.jpg" alt="Photo 5"
+                        onclick="openModal('../assets/images/roni/Picsart_23-11-16_21-13-28-024.jpg')">
+                </div>
+            </div>
+
+            <div id="damon-twain-gallery" class="photo-gallery hidden">
+                <h2>Admin 2 photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/fadhil/IMG-20230322-WA0007.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230322-WA0007.jpg')">
+                    <img src="../assets/images/fadhil/IMG_20231201_210433.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/fadhil/IMG_20231201_210433.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20230322-WA0007.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230322-WA0007.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20230322-WA0008.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230322-WA0008.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20230325-WA0016.jpeg" alt="Photo 5"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230325-WA0016.jpeg')">
+                    <img src="../assets/images/fadhil/IMG-20230327-WA0027.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230327-WA0027.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20230515-WA0008.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230515-WA0008.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20230515-WA0009.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230515-WA0009.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20230515-WA0010.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230515-WA0010.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20230704-WA0048.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230704-WA0048.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20231028-WA0012.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20231028-WA0012.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20231028-WA0013.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20231028-WA0013.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20231029-WA0010.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20231029-WA0010.jpg')">
+                    <img src="../assets/images/fadhil/IMG-20240305-WA0036.jpeg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20240305-WA0036.jpeg')">
+                    <img src="../assets/images/fadhil/Picsart_23-11-16_21-54-53-018.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/Picsart_23-11-16_21-54-53-018.jpg')">
+                    <img src="../assets/images/fadhil/ef08d58c90cd82b232dee3eb9eca7efd_1708498679233_0.jpeg"
+                        alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/ef08d58c90cd82b232dee3eb9eca7efd_1708498679233_0.jpeg')">
+                    <img src="../assets/images/fadhil/IMG-20230930-WA0003.jpeg" alt="Photo 6"
+                        onclick="openModal('../assets/images/fadhil/IMG-20230930-WA0003.jpeg')">
+                </div>
+                <br><br>
+            </div>
+
+            <div id="shakira-lee-twain-gallery" class="photo-gallery hidden">
+                <h2>Admin 3 Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/alen/alen1.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/alen/alen1.jpg')">
+                    <img src="../assets/images/alen/alen2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/alen/alen2.jpg')">
+                    <img src="../assets/images/alen/alen3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/alen/alen3.jpg')">
+                    <img src="../assets/images/alen/alen4.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/alen/alen4.jpg')">
+                    <img src="../assets/images/alen/alen5.jpg" alt="Photo 5"
+                        onclick="openModal('../assets/images/alen/alen5.jpg')">
+                    <img src="../assets/images/alen/alen6.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/alen/alen6.jpg')">
+                    <img src="../assets/images/alen/alen7.jpg" alt="Photo 7"
+                        onclick="openModal('../assets/images/alen/alen7.jpg')">
+                    <img src="../assets/images/alen/alen8.jpg" alt="Photo 8"
+                        onclick="openModal('../assets/images/alen/alen8.jpg')">
+                    <img src="../assets/images/alen/alen9.jpg" alt="Photo 9"
+                        onclick="openModal('../assets/images/alen/alen9.jpg')">
+                    <img src="../assets/images/alen/alen10.jpg" alt="Photo 10"
+                        onclick="openModal('../assets/images/alen/alen10.jpg')">
+                    <img src="../assets/images/alen/alen11.jpg" alt="Photo 11"
+                        onclick="openModal('../assets/images/alen/alen11.jpg')">
+                    <img src="../assets/images/alen/alen12.jpg" alt="Photo 12"
+                        onclick="openModal('../assets/images/alen/alen12.jpg')">
+                    <img src="../assets/images/alen/alen13.jpg" alt="Photo 13"
+                        onclick="openModal('../assets/images/alen/alen13.jpg')">
+                    <img src="../assets/images/alen/alen14.jpg" alt="Photo 14"
+                        onclick="openModal('../assets/images/alen/alen14.jpg')">
+                    <img src="../assets/images/alen/alen15.jpg" alt="Photo 15"
+                        onclick="openModal('../assets/images/alen/alen15.jpg')">
+                    <img src="../assets/images/alen/alen16.jpg" alt="Photo 16"
+                        onclick="openModal('../assets/images/alen/alen16.jpg')">
+                    <img src="../assets/images/alen/alen17.jpg" alt="Photo 17"
+                        onclick="openModal('../assets/images/alen/alen17.jpg')">
+                    <img src="../assets/images/alen/alen18.jpg" alt="Photo 18"
+                        onclick="openModal('../assets/images/alen/alen18.jpg')">
+                    <img src="../assets/images/alen/alen19.jpg" alt="Photo 19"
+                        onclick="openModal('../assets/images/alen/alen19.jpg')">
+                    <img src="../assets/images/alen/alen20.jpg" alt="Photo 20"
+                        onclick="openModal('../assets/images/alen/alen20.jpg')">
+                    <img src="../assets/images/alen/alen21.jpg" alt="Photo 21"
+                        onclick="openModal('../assets/images/alen/alen21.jpg')">
+                    <img src="../assets/images/alen/alen22.jpg" alt="Photo 22"
+                        onclick="openModal('../assets/images/alen/alen22.jpg')">
+                    <img src="../assets/images/alen/alen23.jpg" alt="Photo 23"
+                        onclick="openModal('../assets/images/alen/alen23.jpg')">
+                    <img src="../assets/images/alen/alen24.jpg" alt="Photo 24"
+                        onclick="openModal('../assets/images/alen/alen24.jpg')">
+                </div>
+                <br><br><br>
+            </div>
+
+            <div id="putro" class="photo-gallery hidden">
+                <h2>putro photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/putra/putro1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/putra/putro1.jpg')">
+                    <img src="../assets/images/putra/putro2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/putra/putro2.jpg')">
+                    <img src="../assets/images/putra/putro3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/putra/putro3.jpg')">
+                    <img src="../assets/images/putra/putro4.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/putra/putro4.jpg')">
+                    <img src="../assets/images/putra/putro5.jpg" alt="Photo 5"
+                        onclick="openModal('../assets/images/putra/putro5.jpg')">
+                    <img src="../assets/images/putra/putro6.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/putra/putro6.jpg')">
+                    <img src="../assets/images/putra/putro7.jpg" alt="Photo 7"
+                        onclick="openModal('../assets/images/putra/putro7.jpg')">
+                    <img src="../assets/images/putra/putro8.jpg" alt="Photo 8"
+                        onclick="openModal('../assets/images/putra/putro8.jpg')">
+                    <img src="../assets/images/putra/putro9.jpg" alt="Photo 9"
+                        onclick="openModal('../assets/images/putra/putro9.jpg')">
+                    <img src="../assets/images/putra/putro10.jpg" alt="Photo 10"
+                        onclick="openModal('../assets/images/putra/putro10.jpg')">
+                    <img src="../assets/images/putra/putro11.jpg" alt="Photo 11"
+                        onclick="openModal('../assets/images/putra/putro11.jpg')">
+                    <img src="../assets/images/putra/putro12.jpg" alt="Photo 12"
+                        onclick="openModal('../assets/images/putra/putro12.jpg')">
+                    <img src="../assets/images/putra/putro13.jpg" alt="Photo 13"
+                        onclick="openModal('../assets/images/putra/putro13.jpg')">
+                </div>
+                <br><br><br>
+            </div>
+
+            <div id="bantip" class="photo-gallery hidden">
+                <h2>bantip Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/bandix/bantip1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/bandix/bantip1.jpg')">
+                    <img src="../assets/images/bandix/bantip2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/bandix/bantip2.jpg')">
+                    <img src="../assets/images/bandix/bantip3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/bandix/bantip3.jpg')">
+                    <img src="../assets/images/bandix/bantip4.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/bandix/bantip4.jpg')">
+                    <img src="../assets/images/bandix/bantip5.jpg" alt="Photo 5"
+                        onclick="openModal('../assets/images/bandix/bantip5.jpg')">
+                    <img src="../assets/images/bandix/bantip6.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/bandix/bantip6.jpg')">
+                    <img src="../assets/images/bandix/bantip7.jpg" alt="Photo 7"
+                        onclick="openModal('../assets/images/bandix/bantip7.jpg')">
+                </div>
+                <br><br><br>
+            </div>
+
+
+            <div id="ikyyy" class="photo-gallery hidden">
+                <h2>Ikyyy Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/zikry/ikyyy1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/zikry/ikyyy1.jpg')">
+                    <img src="../assets/images/zikry/ikyyy2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/zikry/ikyyy2.jpg')">
+                    <img src="../assets/images/zikry/ikyyy3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/zikry/ikyyy3.jpg')">
+                    <img src="../assets/images/zikry/ikyyy4.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/zikry/ikyyy4.jpg')">
+                    <img src="../assets/images/zikry/ikyyy5.jpg" alt="Photo 5"
+                        onclick="openModal('../assets/images/zikry/ikyyy5.jpg')">
+                    <img src="../assets/images/zikry/ikyyy6.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/zikry/ikyyy6.jpg')">
+                    <img src="../assets/images/zikry/ikyyy7.jpg" alt="Photo 7"
+                        onclick="openModal('../assets/images/zikry/ikyyy7.jpg')">
+                    <img src="../assets/images/zikry/ikyyy8.jpg" alt="Photo 8"
+                        onclick="openModal('../assets/images/zikry/ikyyy8.jpg')">
+                    <img src="../assets/images/zikry/ikyyy9.jpg" alt="Photo 9"
+                        onclick="openModal('../assets/images/zikry/ikyyy9.jpg')">
+                    <img src="../assets/images/zikry/ikyyy10.jpg" alt="Photo 10"
+                        onclick="openModal('../assets/images/zikry/ikyyy10.jpg')">
+                    <img src="../assets/images/zikry/ikyyy11.jpg" alt="Photo 11"
+                        onclick="openModal('../assets/images/zikry/ikyyy11.jpg')">
+                </div>
+                <br><br><br>
+            </div>
+
+            <div id="elhis" class="photo-gallery hidden">
+                <h2>Elhis Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/elis/elis1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/elis/elis1.jpg')">
+                    <img src="../assets/images/elis/elis2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/elis/elis2.jpg')">
+                    <img src="../assets/images/elis/elis3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/elis/elis3.jpg')">
+                    <img src="../assets/images/elis/elis4.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/elis/elis4.jpg')">
+                    <img src="../assets/images/elis/elis5.jpg" alt="Photo 5"
+                        onclick="openModal('../assets/images/elis/elis5.jpg')">
+                    <img src="../assets/images/elis/elis6.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/elis/elis6.jpg')">
+                    <img src="../assets/images/elis/elis7.jpg" alt="Photo 7"
+                        onclick="openModal('../assets/images/elis/elis7.jpg')">
+                    <img src="../assets/images/elis/elis8.jpg" alt="Photo 8"
+                        onclick="openModal('../assets/images/elis/elis8.jpg')">
+                    <img src="../assets/images/elis/elis9.jpg" alt="Photo 9"
+                        onclick="openModal('../assets/images/elis/elis9.jpg')">
+                </div>
+                <br><br><br>
+            </div>
+
+
+            <div id="oland" class="photo-gallery hidden">
+                <h2>Oland Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/oland/oland1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/oland/oland1.jpg')">
+                    <img src="../assets/images/oland/oland2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/oland/oland2.jpg')">
+                    <img src="../assets/images/oland/oland3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/oland/oland3.jpg')">
+                </div>
+            </div>
+
+            <div id="aputh" class="photo-gallery hidden">
+                <h2>Aputh Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/aputh/aputh1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/aputh/aputh1.jpg')">
+                    <img src="../assets/images/aputh/aputh2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/aputh/aputh2.jpg')">
+                    <img src="../assets/images/aputh/aputh3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/aputh/aputh3.jpg')">
+                    <img src="../assets/images/aputh/aputh4.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/aputh/aputh4.jpg')">
+                    <img src="../assets/images/aputh/aputh5.jpg" alt="Photo 5"
+                        onclick="openModal('../assets/images/aputh/aputh5.jpg')">
+                </div>
+                <br><br><br>
+            </div>
+
+            <div id="aghil" class="photo-gallery hidden">
+                <h2>Aghil Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/aghil/aghil1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/aghil/aghil1.jpg')">
+                    <img src="../assets/images/aghil/aghil2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/aghil/aghil2.jpg')">
+                </div>
+            </div>
+
+
+
+            <div id="all-photos-gallery" class="photo-gallery all-photos-gallery">
+                <h2>All Photos</h2>
+                <div class="photo-grid">
+                    <img src="../assets/images/semua/all1.jpg" alt="Photo 1"
+                        onclick="openModal('../assets/images/semua/all1.jpg')">
+                    <img src="../assets/images/semua/all2.jpg" alt="Photo 2"
+                        onclick="openModal('../assets/images/semua/all2.jpg')">
+                    <img src="../assets/images/semua/all3.jpg" alt="Photo 3"
+                        onclick="openModal('../assets/images/semua/all3.jpg')">
+                    <img src="../assets/images/semua/all4.jpg" alt="Photo 4"
+                        onclick="openModal('../assets/images/semua/all4.jpg')">
+                    <img src="../assets/images/semua/all5.jpg" alt="Photo 5"
+                        onclick="openModal('../assets/images/semua/all5.jpg')">
+                    <img src="../assets/images/semua/all6.jpg" alt="Photo 6"
+                        onclick="openModal('../assets/images/semua/all6.jpg')">
+                    <img src="../assets/images/semua/all7.jpg" alt="Photo 7"
+                        onclick="openModal('../assets/images/semua/all7.jpg')">
+                    <img src="../assets/images/semua/all8.jpg" alt="Photo 8"
+                        onclick="openModal('../assets/images/semua/all8.jpg')">
+                    <img src="../assets/images/semua/all9.jpg" alt="Photo 9"
+                        onclick="openModal('../assets/images/semua/all9.jpg')">
+                    <img src="../assets/images/semua/all10.jpg" alt="Photo 10"
+                        onclick="openModal('../assets/images/semua/all10.jpg')">
+                    <img src="../assets/images/semua/all11.jpg" alt="Photo 11"
+                        onclick="openModal('../assets/images/semua/all11.jpg')">
+                    <img src="../assets/images/semua/all12.jpg" alt="Photo 12"
+                        onclick="openModal('../assets/images/semua/all12.jpg')">
+                    <img src="../assets/images/semua/all13.jpg" alt="Photo 13"
+                        onclick="openModal('../assets/images/semua/all13.jpg')">
+                    <img src="../assets/images/semua/all14.jpg" alt="Photo 14"
+                        onclick="openModal('../assets/images/semua/all14.jpg')">
+                    <img src="../assets/images/semua/all15.jpg" alt="Photo 15"
+                        onclick="openModal('../assets/images/semua/all15.jpg')">
+                    <img src="../assets/images/semua/all16.jpg" alt="Photo 16"
+                        onclick="openModal('../assets/images/semua/all16.jpg')">
+                    <img src="../assets/images/semua/all17.jpg" alt="Photo 17"
+                        onclick="openModal('../assets/images/semua/all17.jpg')">
+                    <img src="../assets/images/semua/all18.jpg" alt="Photo 18"
+                        onclick="openModal('../assets/images/semua/all18.jpg')">
+                    <img src="../assets/images/semua/all19.jpg" alt="Photo 19"
+                        onclick="openModal('../assets/images/semua/all19.jpg')">
+                    <img src="../assets/images/semua/all20.jpg" alt="Photo 20"
+                        onclick="openModal('../assets/images/semua/all20.jpg')">
+                    <img src="../assets/images/semua/all21.jpg" alt="Photo 21"
+                        onclick="openModal('../assets/images/semua/all21.jpg')">
+                    <img src="../assets/images/semua/all22.jpg" alt="Photo 22"
+                        onclick="openModal('../assets/images/semua/all22.jpg')">
+                    <img src="../assets/images/semua/all23.jpg" alt="Photo 23"
+                        onclick="openModal('../assets/images/semua/all23.jpg')">
+                    <img src="../assets/images/semua/all24.jpg" alt="Photo 24"
+                        onclick="openModal('../assets/images/semua/all24.jpg')">
+                    <img src="../assets/images/semua/all25.jpg" alt="Photo 25"
+                        onclick="openModal('../assets/images/semua/all25.jpg')">
+                    <img src="../assets/images/semua/all26.jpg" alt="Photo 26"
+                        onclick="openModal('../assets/images/semua/all26.jpg')">
+                    <img src="../assets/images/semua/all27.jpg" alt="Photo 27"
+                        onclick="openModal('../assets/images/semua/all27.jpg')">
+                    <img src="../assets/images/semua/all28.jpg" alt="Photo 28"
+                        onclick="openModal('../assets/images/semua/all28.jpg')">
+                    <img src="../assets/images/semua/all29.jpg" alt="Photo 29"
+                        onclick="openModal('../assets/images/semua/all29.jpg')">
+                    <img src="../assets/images/semua/all30.jpg" alt="Photo 30"
+                        onclick="openModal('../assets/images/semua/all30.jpg')">
+                    <img src="../assets/images/semua/all31.jpg" alt="Photo 31"
+                        onclick="openModal('../assets/images/semua/all31.jpg')">
+                    <img src="../assets/images/semua/all32.jpg" alt="Photo 32"
+                        onclick="openModal('../assets/images/semua/all32.jpg')">
+                    <img src="../assets/images/semua/all33.jpg" alt="Photo 33"
+                        onclick="openModal('../assets/images/semua/all33.jpg')">
+                    <img src="../assets/images/semua/all34.jpg" alt="Photo 34"
+                        onclick="openModal('../assets/images/semua/all34.jpg')">
+                    <img src="../assets/images/semua/all35.jpg" alt="Photo 35"
+                        onclick="openModal('../assets/images/semua/all35.jpg')">
+                    <img src="../assets/images/semua/all36.jpg" alt="Photo 36"
+                        onclick="openModal('../assets/images/semua/all36.jpg')">
+                    <img src="../assets/images/semua/all37.jpg" alt="Photo 37"
+                        onclick="openModal('../assets/images/semua/all37.jpg')">
+                    <img src="../assets/images/semua/all38.jpg" alt="Photo 38"
+                        onclick="openModal('../assets/images/semua/all38.jpg')">
+                    <img src="../assets/images/semua/all39.jpg" alt="Photo 39"
+                        onclick="openModal('../assets/images/semua/all39.jpg')">
+                    <img src="../assets/images/semua/all40.jpg" alt="Photo 40"
+                        onclick="openModal('../assets/images/semua/all40.jpg')">
+                    <img src="../assets/images/semua/all41.jpg" alt="Photo 41"
+                        onclick="openModal('../assets/images/semua/all41.jpg')">
+                    <img src="../assets/images/semua/all42.jpg" alt="Photo 42"
+                        onclick="openModal('../assets/images/semua/all42.jpg')">
+                    <img src="../assets/images/semua/all43.jpg" alt="Photo 43"
+                        onclick="openModal('../assets/images/semua/all43.jpg')">
+                    <img src="../assets/images/semua/all44.jpg" alt="Photo 44"
+                        onclick="openModal('../assets/images/semua/all44.jpg')">
+                    <img src="../assets/images/semua/all45.jpg" alt="Photo 45"
+                        onclick="openModal('../assets/images/semua/all45.jpg')">
+                    <img src="../assets/images/semua/all46.jpg" alt="Photo 46"
+                        onclick="openModal('../assets/images/semua/all46.jpg')">
+                    <img src="../assets/images/semua/all47.jpg" alt="Photo 47"
+                        onclick="openModal('../assets/images/semua/all47.jpg')">
+                    <img src="../assets/images/semua/all48.jpg" alt="Photo 48"
+                        onclick="openModal('../assets/images/semua/all48.jpg')">
+                    <img src="../assets/images/semua/all49.jpg" alt="Photo 49"
+                        onclick="openModal('../assets/images/semua/all49.jpg')">
+                    <img src="../assets/images/semua/all50.jpg" alt="Photo 50"
+                        onclick="openModal('../assets/images/semua/all50.jpg')">
+                    <img src="../assets/images/semua/all51.jpg" alt="Photo 51"
+                        onclick="openModal('../assets/images/semua/all51.jpg')">
+                    <img src="../assets/images/semua/all52.jpg" alt="Photo 52"
+                        onclick="openModal('../assets/images/semua/all52.jpg')">
+                    <img src="../assets/images/semua/all53.jpg" alt="Photo 53"
+                        onclick="openModal('../assets/images/semua/all53.jpg')">
+                    <img src="../assets/images/semua/all54.jpg" alt="Photo 54"
+                        onclick="openModal('../assets/images/semua/all54.jpg')">
+                    <img src="../assets/images/semua/all55.jpg" alt="Photo 55"
+                        onclick="openModal('../assets/images/semua/all55.jpg')">
+                    <img src="../assets/images/semua/all56.jpg" alt="Photo 56"
+                        onclick="openModal('../assets/images/semua/all56.jpg')">
+                    <img src="../assets/images/semua/all57.jpg" alt="Photo 57"
+                        onclick="openModal('../assets/images/semua/all57.jpg')">
+                    <img src="../assets/images/semua/all58.jpg" alt="Photo 58"
+                        onclick="openModal('../assets/images/semua/all58.jpg')">
+                    <img src="../assets/images/semua/all59.jpg" alt="Photo 59"
+                        onclick="openModal('../assets/images/semua/all59.jpg')">
+                    <img src="../assets/images/semua/all60.jpg" alt="Photo 60"
+                        onclick="openModal('../assets/images/semua/all60.jpg')">
+                    <img src="../assets/images/semua/all61.jpg" alt="Photo 61"
+                        onclick="openModal('../assets/images/semua/all61.jpg')">
+                    <img src="../assets/images/semua/all62.jpg" alt="Photo 62"
+                        onclick="openModal('../assets/images/semua/all62.jpg')">
+                    <img src="../assets/images/semua/all63.jpg" alt="Photo 63"
+                        onclick="openModal('../assets/images/semua/all63.jpg')">
+                    <img src="../assets/images/semua/all64.jpg" alt="Photo 64"
+                        onclick="openModal('../assets/images/semua/all64.jpg')">
+                    <img src="../assets/images/semua/all65.jpg" alt="Photo 65"
+                        onclick="openModal('../assets/images/semua/all65.jpg')">
+                    <img src="../assets/images/semua/all66.jpg" alt="Photo 66"
+                        onclick="openModal('../assets/images/semua/all66.jpg')">
+                    <img src="../assets/images/semua/all67.jpg" alt="Photo 67"
+                        onclick="openModal('../assets/images/semua/all67.jpg')">
+                    <img src="../assets/images/semua/all68.jpg" alt="Photo 68"
+                        onclick="openModal('../assets/images/semua/all68.jpg')">
+                    <img src="../assets/images/semua/all69.jpg" alt="Photo 69"
+                        onclick="openModal('../assets/images/semua/all69.jpg')">
+                    <img src="../assets/images/semua/all70.jpg" alt="Photo 70"
+                        onclick="openModal('../assets/images/semua/all70.jpg')">
+                    <img src="../assets/images/semua/all71.jpg" alt="Photo 71"
+                        onclick="openModal('../assets/images/semua/all71.jpg')">
+                    <img src="../assets/images/semua/all72.jpg" alt="Photo 72"
+                        onclick="openModal('../assets/images/semua/all72.jpg')">
+                    <img src="../assets/images/semua/all73.jpg" alt="Photo 73"
+                        onclick="openModal('../assets/images/semua/all73.jpg')">
+                    <img src="../assets/images/semua/all74.jpg" alt="Photo 74"
+                        onclick="openModal('../assets/images/semua/all74.jpg')">
+                    <img src="../assets/images/semua/all75.jpg" alt="Photo 75"
+                        onclick="openModal('../assets/images/semua/all75.jpg')">
+                    <img src="../assets/images/semua/all76.jpg" alt="Photo 76"
+                        onclick="openModal('../assets/images/semua/all76.jpg')">
+                    <img src="../assets/images/semua/all77.jpg" alt="Photo 77"
+                        onclick="openModal('../assets/images/semua/all77.jpg')">
+                    <img src="../assets/images/semua/all78.jpg" alt="Photo 78"
+                        onclick="openModal('../assets/images/semua/all78.jpg')">
+                    <img src="../assets/images/semua/all79.jpg" alt="Photo 79"
+                        onclick="openModal('../assets/images/semua/all79.jpg')">
+                    <img src="../assets/images/semua/all80.jpg" alt="Photo 80"
+                        onclick="openModal('../assets/images/semua/all80.jpg')">
+                    <img src="../assets/images/semua/all81.jpg" alt="Photo 81"
+                        onclick="openModal('../assets/images/semua/all81.jpg')">
+                    <img src="../assets/images/semua/all82.jpg" alt="Photo 82"
+                        onclick="openModal('../assets/images/semua/all82.jpg')">
+                    <img src="../assets/images/semua/all83.jpg" alt="Photo 83"
+                        onclick="openModal('../assets/images/semua/all83.jpg')">
+                    <img src="../assets/images/semua/all84.jpg" alt="Photo 84"
+                        onclick="openModal('../assets/images/semua/all84.jpg')">
+                    <img src="../assets/images/semua/all85.jpg" alt="Photo 85"
+                        onclick="openModal('../assets/images/semua/all85.jpg')">
+                    <img src="../assets/images/semua/all86.jpg" alt="Photo 86"
+                        onclick="openModal('../assets/images/semua/all86.jpg')">
+                    <img src="../assets/images/semua/all87.jpg" alt="Photo 87"
+                        onclick="openModal('../assets/images/semua/all87.jpg')">
+                    <img src="../assets/images/semua/all88.jpg" alt="Photo 88"
+                        onclick="openModal('../assets/images/semua/all88.jpg')">
+                    <img src="../assets/images/semua/all89.jpg" alt="Photo 89"
+                        onclick="openModal('../assets/images/semua/all89.jpg')">
+                    <img src="../assets/images/semua/all90.jpg" alt="Photo 90"
+                        onclick="openModal('../assets/images/semua/all90.jpg')">
+                    <img src="../assets/images/semua/all91.jpg" alt="Photo 91"
+                        onclick="openModal('../assets/images/semua/all91.jpg')">
+                    <img src="../assets/images/semua/all92.jpg" alt="Photo 92"
+                        onclick="openModal('../assets/images/semua/all92.jpg')">
+                    <img src="../assets/images/semua/all93.jpg" alt="Photo 93"
+                        onclick="openModal('../assets/images/semua/all93.jpg')">
+                    <img src="../assets/images/semua/all94.jpg" alt="Photo 94"
+                        onclick="openModal('../assets/images/semua/all94.jpg')">
+                    <img src="../assets/images/semua/all95.jpg" alt="Photo 95"
+                        onclick="openModal('../assets/images/semua/all95.jpg')">
+                    <img src="../assets/images/semua/all96.jpg" alt="Photo 96"
+                        onclick="openModal('../assets/images/semua/all96.jpg')">
+                    <img src="../assets/images/semua/all97.jpg" alt="Photo 97"
+                        onclick="openModal('../assets/images/semua/all97.jpg')">
+                    <img src="../assets/images/semua/all98.jpg" alt="Photo 98"
+                        onclick="openModal('../assets/images/semua/all98.jpg')">
+                    <img src="../assets/images/semua/all99.jpg" alt="Photo 99"
+                        onclick="openModal('../assets/images/semua/all99.jpg')">
+                    <img src="../assets/images/semua/all100.jpg" alt="Photo 100"
+                        onclick="openModal('../assets/images/semua/all100.jpg')">
+                    <img src="../assets/images/semua/all101.jpg" alt="Photo 101">
+                    <img src="../assets/images/semua/all102.jpg" alt="Photo 102">
+                    <img src="../assets/images/semua/all103.jpg" alt="Photo 103">
+                    <img src="../assets/images/semua/all104.jpg" alt="Photo 104">
+                    <img src="../assets/images/semua/all105.jpg" alt="Photo 105">
+                    <img src="../assets/images/semua/all106.jpg" alt="Photo 106">
+                    <img src="../assets/images/semua/all107.jpg" alt="Photo 107">
+                    <img src="../assets/images/semua/all108.jpg" alt="Photo 108">
+                    <img src="../assets/images/semua/all109.jpg" alt="Photo 109">
+                    <img src="../assets/images/semua/all110.jpg" alt="Photo 110">
+                    <img src="../assets/images/semua/all111.jpg" alt="Photo 111">
+                    <img src="../assets/images/semua/all112.jpg" alt="Photo 112">
+                    <img src="../assets/images/semua/all113.jpg" alt="Photo 113">
+                    <img src="../assets/images/semua/all114.jpg" alt="Photo 114">
+                    <img src="../assets/images/semua/all115.jpg" alt="Photo 115">
+                    <img src="../assets/images/semua/all116.jpg" alt="Photo 116">
+                    <img src="../assets/images/semua/all117.jpg" alt="Photo 117">
+                    <img src="../assets/images/semua/all118.jpg" alt="Photo 118">
+                    <img src="../assets/images/semua/all119.jpg" alt="Photo 119">
+                    <img src="../assets/images/semua/all120.jpg" alt="Photo 120">
+                    <img src="../assets/images/semua/all121.jpg" alt="Photo 121">
+                    <img src="../assets/images/semua/all122.jpg" alt="Photo 122">
+                    <img src="../assets/images/semua/all123.jpg" alt="Photo 123">
+                    <img src="../assets/images/semua/all124.jpg" alt="Photo 124">
+                    <img src="../assets/images/semua/all125.jpg" alt="Photo 125">
+                    <img src="../assets/images/semua/all126.jpg" alt="Photo 126">
+                    <img src="../assets/images/semua/all127.jpg" alt="Photo 127">
+                    <img src="../assets/images/semua/all128.jpg" alt="Photo 128">
+                    <img src="../assets/images/semua/all129.jpg" alt="Photo 129">
+                    <img src="../assets/images/semua/all130.jpg" alt="Photo 130">
+                    <img src="../assets/images/semua/all131.jpg" alt="Photo 131">
+                    <img src="../assets/images/semua/all132.jpg" alt="Photo 132">
+                    <img src="../assets/images/semua/all133.jpg" alt="Photo 133">
+                    <img src="../assets/images/semua/all134.jpg" alt="Photo 134">
+                    <img src="../assets/images/semua/all135.jpg" alt="Photo 135">
+                    <img src="../assets/images/semua/all136.jpg" alt="Photo 136">
+                    <img src="../assets/images/semua/all137.jpg" alt="Photo 137">
+                    <img src="../assets/images/semua/all138.jpg" alt="Photo 138">
+                    <img src="../assets/images/semua/all139.jpg" alt="Photo 139">
+                    <img src="../assets/images/semua/all140.jpg" alt="Photo 140">
+                    <img src="../assets/images/semua/all141.jpg" alt="Photo 141">
+                    <img src="../assets/images/semua/all142.jpg" alt="Photo 142">
+                    <img src="../assets/images/semua/all143.jpg" alt="Photo 143">
+                    <img src="../assets/images/semua/all144.jpg" alt="Photo 144">
+                    <img src="../assets/images/semua/all145.jpg" alt="Photo 145">
+                    <img src="../assets/images/semua/all146.jpg" alt="Photo 146">
+                    <img src="../assets/images/semua/all147.jpg" alt="Photo 147">
+                    <img src="../assets/images/semua/all148.jpg" alt="Photo 148">
+                    <img src="../assets/images/semua/all149.jpg" alt="Photo 149">
+                    <img src="../assets/images/semua/all150.jpg" alt="Photo 150">
+                    <img src="../assets/images/semua/all151.jpg" alt="Photo 151">
+                    <img src="../assets/images/semua/all152.jpg" alt="Photo 152">
+                    <img src="../assets/images/semua/all153.jpg" alt="Photo 153">
+                    <img src="../assets/images/semua/all154.jpg" alt="Photo 154">
+                    <img src="../assets/images/semua/all155.jpg" alt="Photo 155">
+                    <img src="../assets/images/semua/all156.jpg" alt="Photo 156">
+                    <img src="../assets/images/semua/all157.jpg" alt="Photo 157">
+                    <img src="../assets/images/semua/all158.jpg" alt="Photo 158">
+                    <img src="../assets/images/semua/all159.jpg" alt="Photo 159">
+                    <img src="../assets/images/semua/all160.jpg" alt="Photo 160">
+                    <img src="../assets/images/semua/all161.jpg" alt="Photo 161">
+                </div>
+                <br><br><br>
+            </div>
+
+        </div>
+
+        <div id="modal-overlay" class="hidden" onclick="closeModal()">
+            <div class="modal-content">
+                <img id="modal-image" src="" alt="Full-size Image">
+                <span class="close-button" onclick="closeModal()">×</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- isi anggota nih cuy -->
+    <div id="messages" class="section">
+        <div class="wrapper">
+            <div class="top-section">
+                <h2>TEORITER TEAM</h2>
+                <img src="../assets/icons/20250202_134427.png" alt="Profile">
+            </div>
+            <!-- <h3>Integrations</h3>
+            <div class="search-container">
+                <input type="text" placeholder="Search integration">
+                <button>&#128269;</button>
+            </div> -->
+            <div class="grid-container">
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/icons/IMG_20231201_210433-removebg-preview.png"
+                            alt="Pratama"></div>
+                    <div class="info-box">
+                        <div class="member-name">Pratama</div>
+                        <div class="member-role">Web Dev, Admin 2, Eksekutor</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/roni/IMG-20231116-WA0007-removebg-preview.png"
+                            alt="Roni"></div>
+                    <div class="info-box">
+                        <div class="member-name">Roni</div>
+                        <div class="member-role">Admin 1, Decision Maker</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/alen/alen16.jpg" alt="Mr. V"></div>
+                    <div class="info-box">
+                        <div class="member-name">Mr. V</div>
+                        <div class="member-role">Admin 3, Social Media Admin, Rekruter</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/putra/putro13.jpg" alt="Andi"></div>
+                    <div class="info-box">
+                        <div class="member-name">putro</div>
+                        <div class="member-role">sesepuh, Civil Engineer</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/bandix/bantip5.jpg" alt="Budi"></div>
+                    <div class="info-box">
+                        <div class="member-name">Bantip (bandi ngintip)</div>
+                        <div class="member-role">sesepuh, web designer</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/zikry/ikyyy10.jpg" alt="Citra">
+                    </div>
+                    <div class="info-box">
+                        <div class="member-name">ikyy</div>
+                        <div class="member-role">sesepuh, geologist</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/elis/elis8.jpg" alt="Dian"></div>
+                    <div class="info-box">
+                        <div class="member-name">elhis</div>
+                        <div class="member-role">sesepuh, linguist</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/oland/oland3.jpg" alt="Fajar">
+                    </div>
+                    <div class="info-box">
+                        <div class="member-name">oland</div>
+                        <div class="member-role">sesepuh</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/aputh/aputh3.jpg" alt="Eka"></div>
+                    <div class="info-box">
+                        <div class="member-name">aputh</div>
+                        <div class="member-role">doctor</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/aghil/aghil2.jpg" alt="aghil"></div>
+                    <div class="info-box">
+                        <div class="member-name">aghil</div>
+                        <div class="member-role">doctor</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/irene/irene3.jpg" alt="Fajar">
+                    </div>
+                    <div class="info-box">
+                        <div class="member-name">irene</div>
+                        <div class="member-role">pharmacist</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/rey/rey5.jpg" alt="Fajar"></div>
+                    <div class="info-box">
+                        <div class="member-name">reyyy</div>
+                        <div class="member-role">NPC Namrole</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/rizik/rizik4.jpg" alt="Fajar"></div>
+                    <div class="info-box">
+                        <div class="member-name">rizik</div>
+                        <div class="member-role">NPC Namlea</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/awah/awah2.jpg" alt="awah"></div>
+                    <div class="info-box">
+                        <div class="member-name">awah</div>
+                        <div class="member-role">NPC Medan</div>
+                    </div>
+                </div>
+                <div class="circle-item">
+                    <div class="circle"><img src="../assets/images/patur/patur3.jpg" alt="patur"></div>
+                    <div class="info-box">
+                        <div class="member-name">patur</div>
+                        <div class="member-role">NPC Ambon</div>
+                    </div>
+                </div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- isi project nih cuy -->
+    <div id="projects" class="section">
+        <div class="kontribusi">
+            <h1>Anggota yang berkontribusi dalam project ini</h1>
+            <ul>
+                <li>sarwita - kolaborator luar</li>
+                <li>ronal</li>
+                <li>pratama</li>
+                <li>ikyyy</li>
+            </ul>
+            <div class="wattpad-embed">
+                <h1 style="margin: 0px;">Project Wattpad Teoriter</h1>
+                <iframe src="https://www.wattpad.com/user/Teoriter2020" width="100%" height="500px" frameborder="0">
+                </iframe>
+            </div>
+            <br>
+            <div class="youtube-embed">
+                <h1 style="margin: 0px;">Project Video Teoriter</h1>
+                <iframe width="100%" height="500px"
+                    src="https://www.youtube.com/watch?v=rr_d59dyxi8&ab_channel=FadhilPratama" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- isi sejarah nih cuy -->
+    <div id="settings" class="section">
+        <div class="wrapper-body">
+            <div class="wrapper-sejarah">
+                <img src="../assets/icons/20250201_015437.jpg" alt="Litverse Logo" class="logo-image">
+                <h1 class="main-title">Sejarah Terbentuknya Teoriter</h1>
+                <p class="description-text">Teoriter adalah sebuah grup yang berisi orang-orang aneh, random, autis,
+                    serta berkepribadian ganda. Walaupun begitu, grup whatsapp dengan nama teoriter ini adalah grup yang
+                    mengasikkan. Dalam grup ini kamu bisa bebas bercerita, meminta saran, atau bahkan ingin mabar. Kamu
+                    bisa sarkas, satire, ataupun menghina MU. Grup dengan sistem liberal sederhana yang memberikan
+                    kebebasan kepada para anggotanya, tetapi tidak sepenuhnya seperti itu karna di grup ini admin adalah
+                    penguasa. Aturan di grup ini sederhana, yaitu "admin adalah aturan". Cukup unik, lalu bagaimana
+                    dengan sejarah terbentuknya teoriter?.
+                    <br><br>
+                    <img src="../assets/images/bersama/4fa.jfif" alt="" style="width: 100%;height: 100%;">
+                    <br><br>
+
+                    Jadi, terbentuknya teoriter ini berawal dari siswa SMA yang hobinya main Free Fire, kemudian sadar
+                    bahwa mereka hanya menyia-nyiakan waktu muda mereka yang berharga dan dengan dorongan tugas yang
+                    diberikan oleh guru mereka, akhirnya mereka membuat sebuah grup belajar di aplikasi Messenger dengan
+                    nama grup "Smart People". Nama yang sangat tidak nyambung dengan anggota-anggotanya karena grup ini
+                    terbentuk karna inovasi sekilas oleh orang yang bisa kita bilang bukan orang pintar. Pada awalnya
+                    obrolan di dalam grup ini sesuai dengan judul dan tujuan dibentuknya, yaitu obrolan tentang
+                    pembelajaran, tugas, dan diskusi mengenai materi-materi yang sudah diberikan. Tetapi tidak butuh
+                    waktu lama, kira-kira satu minggu setelahnya, grup ini mulai melenceng dan menjadi grup mabar, entah
+                    siapa dalangnya. Kemudian karna alasan notif messenger yang membuat HP salah satu anggotanya error,
+                    dibuatlah grup cabang whatsapp nya, dan lama-kelamaan grup messenger mulai ditinggalkan karna merasa
+                    bahwa grup whatsapp lebih efisien.
+                    <br><br>
+                    <img src="../assets/images/bersama/smartpp.jfif" alt="" style="width: 100%;height: 100%;">
+                    <br><br>
+
+
+                    Nah itu adalah awal mulai terbentuknya grup ini, lalu bagaimana grup ini bisa berganti nama menjadi
+                    teoriter? Jadi, setelah grup ini mulai melenceng dari tujuan awalnya, grup ini mulai jadi grup chat
+                    sirkel seperti pada umumnya, dengan pembahasan random tiap harinya. Suatu ketika, salah satu dari
+                    mereka mulai membahas sejarah terbentuknya dunia, dan yang dibahas adalah teori bigbang. Karena
+                    pengetahuan yang dangkal dan hanya menyentuh pucuk dari teori tersebut, orang-orang ini mulai
+                    berbicara sesuai dengan apa yang terlintas di otaknya alias ngarang, dan mereka merasa keren dengan
+                    karangan mereka. Lalu sejak saat itu mereka mulai 'berteori'. Berteori di sini adalah berteori
+                    secara objektif tanpa melakukan penelitian ataupun kajian ilmiah, jadi 100% mengarang. Kemudian,
+                    karna momen 'berteori' yang menjadi semakin intens, mereka mulai berpikir bahwa mereka lebih dari
+                    sekedar "smart people". Lalu mereka mulai berdiskusi satu sama lain mengenai perubahan nama grup.
+                    Dengan diskusi dan perdebatan yang cukup panjang, kata "Teoriter" Kemudian menjadi nama grup yang
+                    disepakati oleh semua anggotanya.
+
+                </p>
+                <br>
+                <h1 class="main-title">KASUS PARA ANGGOTA</h1>
+                <h2 style="font-size: 20px;text-align: left;"><b>1. Roni</b></h2>
+                <p style="text-align: left;">pria misterius dengan dua topeng berlapis selalu menarik perhatian.
+                    Orang-orang percaya ia mengenakan dua topeng untuk menyembunyikan ketampanan luar biasa, tetapi
+                    dibalik ketampanannya tersebut, ia menyimpan nafsu yang luar biasa besar.
+                    Suatu malam, seorang gadis melintas di gang sepi ketika pria bertopeng itu mendekatinya. Dengan
+                    suara lembut namun mengancam, ia berbisik, "Jangan takut... aku hanya ingin menunjukkan sesuatu.",
+                    tanpa menunnggu lama, pria itupun menunjukkan zakarnya yang membuat dia dikejar oleh masyarakat.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>2. Pratama</b></h2>
+                <p style="text-align: left;">Pratama (nama samaran: Fadil), menjadi buronan dikarenakan mencuri
+                    flashdisk berisi koleksi video 4no dengan resolusi 8K, untuk dia jual ke pasar gelap dengan harga
+                    fantastis. Dikabarkan sampai saat ini pelaku belum ditemukan, sehingga dipasangkan bounty pada
+                    kepalanya.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>3. Mr. V</b></h2>
+                <p style="text-align: left;">Seorang pria dengan nama Vralen ini mendapatkan bountynya akibat
+                    mengkhianati rasnya(Manusia) dengan cara bersekongkol dengan demit, yaitu setan merah. Hingga saat
+                    ini petugas yang berwenang masih mencarinya.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>4. putro</b></h2>
+                <p style="text-align: left;">Jangan tertipu oleh senyum ramahnya, sudah banyak korban yang berjatuhan
+                    akibat terjatuh ke dalam tipuan pria ini. Dikatakan dia membantai habis korbannya dengan brutal
+                    hingga dia mendapat julukan "bool hunter". Diharapkan untuk seluruh masyarakat agar berhati-hati
+                    jika bertemu pria ini.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>5. Bantip</b></h2>
+                <p style="text-align: left;">Satu-satunya member yang nilai bountynya berada di angka yang sama dengan
+                    admin, yaitu 3x10^9 belly. Rumor menyatakan bahwa dia mendapatkan harga kepala sebanyak ini karna
+                    melakukan sebuah dosa yang sangat besar kepada para admin dan seluruh anggotanya. Kendati demikian,
+                    jejeran para admin tidak dapat melakukan apapun kepadanya, begitu luar biasanya dia.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>6. ikyyy</b></h2>
+                <p style="text-align: left;">"Don't judge a book by it's cover" Yap, benar sekali, bapak2 ini sebenarnya
+                    merupakan seorang pemuda berumur belasan tahun. Beliau mendapatkan bountynya karna menggunakan
+                    penampilannya untuk menyusup ke daerah 'orang dewasa".
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>7. Elhis</b></h2>
+                <p style="text-align: left;">Wanita dengan harga kepala tertinggi di dalam perkumpulan ini, dia pernah
+                    menjadi satu2nya wanita di perkumpulan ini. Selain itu, dia juga merupakan anggota wanita yang
+                    paling berjasa bagi para admin, jadi tidak heran dia mendapatkan bounty tinggi karena sudah menjadi
+                    orang terdahulu yang berada di sekitar para pendosa2 besar.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>7. oland</b></h2>
+                <p style="text-align: left;">Oland, sosok yang namanya bergaung di dunia hitam, dikenal sebagai pemburu
+                    yang memburu sesama manusia. Ia bukan sekadar bayangan di malam hari—ia adalah mimpi buruk bagi para
+                    korban yang organ tubuhnya dijual ke pasar gelap. Konon, ia pernah menghabisi seluruh jaringan
+                    perdagangan manusia seorang diri, bukan karena moral, tetapi karena persaingan. Namun, meski dosa
+                    dan darah menempel di tangannya, tak ada yang berani menjatuhkan hukuman. Ia terlalu berbahaya untuk
+                    disentuh.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>8. aputh</b></h2>
+                <p style="text-align: left;">
+                    Anggota wanita generasi ke 3 setelah Elisa dan 1 lagi wanita lain yang tidak dapat disebutkan
+                    namanya, merupakan wanita yang cukup sulit ditemukan, dikatakan bahwa dia berada di daerah pedalaman
+                    di pulau terpencil. Menurut kabar angin, pulau tersebut dihuni oleh suku2 kuno yang memakan daging
+                    manusia (kanibal).
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>9. aghil</b></h2>
+                <p style="text-align: left;">
+                    Aghil, sosok yang namanya bergaung di dunia medis sebagai "Dokter Tanpa Batas Etika." Ia bukan
+                    penyelamat, melainkan pencipta eksperimen terlarang yang menentang hukum alam. Dikenal karena
+                    praktik medisnya yang brutal, ia melakukan transplantasi dan modifikasi tubuh tanpa izin, mengubah
+                    pasiennya menjadi sesuatu yang bukan lagi manusia seutuhnya. Beberapa menyebutnya jenius gila, yang
+                    lain menganggapnya monster berkedok dokter. Namun satu hal yang pasti—dimana Aghil beroperasi, batas
+                    antara penyembuhan dan kehancuran menjadi kabur.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>10. irene</b></h2>
+                <p style="text-align: left;">
+                    Anggota wanita generasi ke 4, seorang kapten bajak laut ternama yang berkeliaran di laut banda,
+                    kehadirannya membuat para saudagar dan pedagang menderita banyak kerugian, dan berkat kelicikannya
+                    angkatan laut bahkan sampai saat ini kesulitan untuk menangkapnya.Anggota wanita generasi ke 5,
+                    seorang ahli obat-obatan. Dia menjadi buronan berkat karyanya berupa obat aneh yang dapat
+                    menimbulkan reaksi aneh pula pada penggunanya. Dikatakan bahwa obat itu punya efek yang berbeda-beda
+                    bagi setiap pecandunya. Ada yang berhalusinasi, gila, bahkan mati, walaupun begitu, obat ini masih
+                    memikat banyak orang untuk mencobanya. Oleh karena itu pemerintah memburu orang yang menjadi sumber
+                    kekacauan ini.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>11. reyyy</b></h2>
+                <p style="text-align: left;">
+                    Sebuah anomali hidup yang menjadi bukti kegelapan dari pemerintah, orang ini diburu oleh pemerintah
+                    karna dia merupakan orang yang kabur dari suatu daerah eksperimen, tentang eksperimen apa yang
+                    dilakukan,tidak ada yang tau. Hal itu karena informasi mengenai eksperimen ini dirahasiakan oleh
+                    pihak pemerintah, dan tentang apa yang terjadi pada orang ini, tidak ada yang tau.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>12. rizik</b></h2>
+                <p style="text-align: left;">
+                    Seorang pencuri legendaris yang sangat sulit untuk dilacak keberadaannya, Beredar rumor yang
+                    mengatakan bahwa pencuri ini dapat merayap di dinding sehingga dapat memudahkan dia dalam melakukan
+                    aksinya. Dikatakan sudah tak terhitung jumlah benda-benda berharga yang sudah dia curi.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>13. awah</b></h2>
+                <p style="text-align: left;">
+                    Awa, wanita Medan dengan ucapan setajam parang dan nyali sebesar harimau. Dikenal sebagai "Ratu
+                    Pemerasan," ia menguasai dunia kejahatan dengan taktik licik dan tangan besi. Dengan mulut kasarnya,
+                    ia bisa menekan siapa saja untuk tunduk, dari pengusaha kaya hingga pejabat korup. "Kubongkar semua
+                    aib kau kalau nggak mau bayar!" ancamannya selalu jadi mimpi buruk bagi targetnya.
+
+                    Ia tidak butuh senjata, hanya informasi yang bisa menghancurkan hidup seseorang dalam sekejap.
+                    Banyak yang ingin menyingkirkannya, tapi tak ada yang berani. Sebab satu kesalahan kecil saja, Awa
+                    akan memastikan hidup mereka hancur lebih dulu.
+                </p>
+
+                <h2 style="font-size: 20px;text-align: left;"><b>14. patur</b></h2>
+                <p style="text-align: left;">
+                    Patur, dikenal sebagai "Prisma Hidup," adalah sosok yang tak bisa ditebak. Wajahnya jelas,
+                    identitasnya diketahui, tapi kulitnya? Itu cerita lain. Dalam hitungan detik, warna dan teksturnya
+                    bisa berubah—dari cokelat gelap menjadi pucat, dari halus menjadi bersisik seperti reptil.
+
+                    Kemampuannya membuatnya tak tersentuh. Kamera pengawas tak bisa menangkap ciri khasnya, saksi mata
+                    selalu memberi deskripsi berbeda, dan sidik jarinya? Tak pernah sama dua kali. Polisi mungkin tahu
+                    siapa Patur, tapi menangkapnya? Itu mustahil.
+                </p>
+
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+    <p id="noResults" class="no-results" style="display: none;">kontol</p>
+
+
+
+    <!-- isi peraturan nih cuy -->
+    <div id="peraturan" class="section">
+        <div class="peraturan-body">
+            <div class="container-peraturan">
+                <h1>Peraturan Komunitas</h1>
+                <ul>
+                    <li><strong>Admin selalu benar:</strong> admin merupakan pemegang kekuasaan tertinggi di grup ini.
+                        Apa yang diucapkan oleh admin adalah hukum yang harus ditaati oleh seluruh anggota.</li>
+                    </li>
+                    <li><strong>Jika admin salah:</strong>maka kembali ke peraturan awal.</li>
+                    <li><strong>Jangan lebay:</strong> teoriter dikenal sebagai komunitas yang sangat anti dengan
+                        perilaku lebay, barang siapa yang melakukan perilaku ini maka jelas hukumannya.</li>
+                    <li><strong>Jangan sider:</strong> jika kamu masuk ke komunitas ini, maka kamu harus aktif nimbrung,
+                        jangan hanya jadi penonton. Ingatlah apa yang menimpa para mantan member terdahulu</li>
+                    <li><strong>Jangan jadi pengkhianat:</strong> jika kamu sudah masuk ke komunitas ini, maka kamu
+                        harus
+                        loyal, jangan pernah berkhianat, karena jika kamu berkhianat, maka hukuman yang akan kamu terima
+                        akan sangat pedih.</li>
+                    <li><strong>No LGBT:</strong> Komunitas ini adalah komunitas yang anti dengan perilaku LGBT, jadi
+                        jangan
+                        pernah membicarakan hal tersebut di komunitas ini.</li>
+                    <li><strong>Jangan Over:</strong> jangan over dalam segala hal, termasuk bercanda</li>
+                    <li><strong>No ketikan alay:</strong> Hindari ketikan yang alay, tapi kalau nyatir tidak mengapa.
+                    </li>
+                    <li><strong>Tidak Ada Spam atau Promosi Diri:</strong> Hindari promosi berlebihan, spam, atau
+                        berbagi konten yang tidak relevan.</li>
+                    <li><strong>Jaga Konten Tetap Pantas:</strong> Jangan membagikan materi yang menyinggung, ilegal,
+                        atau tidak pantas.</li>
+                    <li><strong>Tetap Sesuai Topik:</strong> Pastikan diskusi tetap relevan dengan fokus komunitas.</li>
+                    <li><strong>Dengarkan Admin:</strong> Patuhi instruksi dari Admin.</li>
+                </ul>
+                <p style="text-align: center;">Pelanggaran terhadap peraturan ini dapat mengakibatkan peringatan,
+                    larangan sementara, atau penghapusan permanen dari komunitas.</p>
+                <p style="text-align: center;">Terima kasih telah menjadi bagian dari komunitas kami dan membantu
+                    menciptakan lingkungan yang positif!</p>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- isi prestasi nih cuy -->
+    <div id="prestasi" class="section">
+        <div class="cabang-body">
+            <div class="container-cabang">
+                <h1>Prestasi Kami</h1>
+                <ul>
+                    <li><strong>Juara 1 Turnamen MLBB</strong></li>
+                    <li><strong>Juara Lomba Video Pendek</strong></li>
+                    <li><strong>Juara 3 Turnamen Free Fire</strong></li>
+                    <li><strong>Juara 1 ngarang</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- isi event nih cuy -->
+    <div id="event" class="section">
+        <div class="event-body">
+            <h1>Event Teoriter</h1>
+            <div class="event-container">
+                <div class="event-card" data-event="cerdascermat">
+                    <img src="../assets/images/bersama/3admin.jpg" alt="cerdas cermat">
+                    <div class="event-details">
+                        <h2>CERDAS CERMAT</h2>
+                        <p>Admin akan mengirimkan link, yang mana link tersebut berisi soal-soal yang menguji
+                            pengetahuan para anggota. Adapun pemenang cerdas cermat akan memenangkan hadiah sebagai
+                            berikut</p>
+                        <ul>
+                            <li> juara 1 = Uang</li>
+                            <li> juara 2 = Pulsa</li>
+                            <li> juara 3 = Dinyanyiin admin</li>
+                        </ul>
+                        <div class="event-info">
+                            <span>Tanggal</span>
+                            <span>10-mei-25</span>
+                            <span>online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card" data-event="autis">
+                    <img src="../assets/images/bersama/IMG-20230704-WA0004.jpg" alt="autis">
+                    <div class="event-details">
+                        <h2>Si paling autis</h2>
+                        <p>Seorang anggota mengirimkan video dirinya saat menunjukkan perilaku khas autisme. Videonya
+                            akan dinilai langsung oleh admin, dan pemenang akan diberikan hadiah sebagai berikut</p>
+                        <ul>
+                            <li> juara 1 = Uang</li>
+                            <li> juara 2 = langganan netflix</li>
+                            <li> juara 3 = pulsa</li>
+                        </ul>
+                        <div class="event-info">
+                            <span>Tanggal</span>
+                            <span>26-april-25</span>
+                            <span>online</span>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bottom Navigation Nih cuy-->
+    <div class="bottom-nav">
+        <button class="active" onclick="navigateTo('home')">
+            <img src="../assets/icons/home.svg" alt="home" width="30" height="30">
+            <span>Beranda</span>
+        </button>
+        <button onclick="navigateTo('messages')">
+            <img src="../assets/icons/people-group.svg" alt="messages" width="30" height="30">
+            <span>Anggota</span>
+        </button>
+        <button onclick="navigateTo('settings')">
+            <img src="../assets/icons/scroll-document-story.svg" alt="settings" width="30" height="30">
+            <span>Sejarah</span>
+        </button>
+    </div>
+
+    <script src="../javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
